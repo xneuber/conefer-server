@@ -67,5 +67,4 @@ logging:
 
 ### Properties do sistema
 conefer:
-  basePackageEnum: "br.gov.go.mago.conefer.entity.enuns"
-  urlPortal: "https://demo.meioambiente.go.gov.br/portal/rest"
+  basePackageEnum: "com.ifg1.manutencao.coneferserver.entity.enuns"

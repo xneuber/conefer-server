@@ -4,6 +4,7 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -18,8 +19,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.Arrays;
 
 @Log4j2
-@Configuration
 @EnableSwagger2
+@EnableWebMvc
+@Configuration
 public class SwaggerConfig {
 
     private final ResponseMessage msg201 = simpleMessage(201, "Recurso criado");
@@ -40,7 +42,7 @@ public class SwaggerConfig {
                 .globalResponseMessage(RequestMethod.PUT, Arrays.asList(msg204put, msg401, msg403, msg404, msg422, msg500))
                 .globalResponseMessage(RequestMethod.DELETE, Arrays.asList(msg204del, msg401, msg403, msg404, msg500))
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.gov.go.mago.conefer.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.ifg1.manutencao.coneferserver"))
                 .paths(PathSelectors.any())
                 .build().apiInfo(apiInfo());
     }

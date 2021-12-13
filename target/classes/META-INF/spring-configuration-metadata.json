@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "conefer",
+      "type": "com.ifg1.manutencao.coneferserver.config.Propriedades",
+      "sourceType": "com.ifg1.manutencao.coneferserver.config.Propriedades"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conefer.base-package-enum",
+      "type": "java.lang.String",
+      "sourceType": "com.ifg1.manutencao.coneferserver.config.Propriedades"
+    },
+    {
+      "name": "conefer.origens-permitida",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.ifg1.manutencao.coneferserver.config.Propriedades"
+    },
+    {
+      "name": "conefer.url-portal",
+      "type": "java.lang.String",
+      "sourceType": "com.ifg1.manutencao.coneferserver.config.Propriedades"
+    }
+  ],
+  "hints": []
+}
