@@ -186,10 +186,15 @@ Ex.:
 O próprio nome já diz muito: um objeto simples usado para transferir dados de um local a outro na aplicação, sem lógica de negócios em seus objetos
 e comumente associado à transferência de dados entre uma camada de visão (view layer) e outra de persistência dos dados (model layer)
 
+
+
 As classes DTO's são classes que são utilizadas para o trafégo de informações entre os clients (apps, painel, integrações) entre os sistemas, e estes
 sempre devem ter o mínimo de campos possíveis, sempre prezar pelo menor tráfego de informações possíveis.
 
 Nesta arquitetura tambem evitamos trafegar os DTO's pelas classes que não são de controles, e com isto evitamos de poluição do código com camadas de visão na API.
+
+Para separação, ao invés de utilizar apenas o sufixo DTO, as classes serão separadas em ResponseModel e RequestModel, no pacote model e subpacotes response e request 
+devendo estes sufixos serem utilizados para facilitar a leitura nas demais classes. 
 
 Segue alguma das especificações para esta classe:
 
@@ -204,7 +209,7 @@ Segue alguma das especificações para esta classe:
 @Builder
 @Getter
 @Setter
-public class DocumentoDTO {
+public class DocumentoResponse {
 
     /**
      * Sempre anotar o identificador do objeto (entidade) com o uuid deste. OBS: NUNCA utilizar o ID da tabela no banco para utilizarmos em parsers.
