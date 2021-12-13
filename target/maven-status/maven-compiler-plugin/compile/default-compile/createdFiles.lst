@@ -1,0 +1,8 @@
+com/ifg1/manutencao/coneferserver/ServletInitializer.class
+com/ifg1/manutencao/coneferserver/util/UtilRestTemplate.class
+com/ifg1/manutencao/coneferserver/ConeferServerApplication.class
+com/ifg1/manutencao/coneferserver/exception/ConeferException.class
+com/ifg1/manutencao/coneferserver/util/UtilString.class
+com/ifg1/manutencao/coneferserver/config/SwaggerConfig.class
+com/ifg1/manutencao/coneferserver/util/UtilDataHora.class
+com/ifg1/manutencao/coneferserver/entity/Entidade.class
