@@ -1,0 +1,38 @@
+# Configuracoes do servidor:
+server:
+  port: 8080
+
+# Configuracoes do spring e banco de dados:
+spring:
+  devtools:
+    livereload:
+      enabled: true
+    add-properties: true
+  main:
+    banner-mode: console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    password: ${conefer.datasource.password}
+
+# Configuracoes de log:
+logging:
+  level:
+    root: info
+    web: info
+    org:
+      springframework:
+        web: info
+      hibernate: info
+    br:
+      gov:
+        go:
+          mago:
+            conefer: info
+
+### Properties do sistema
+conefer:
+  origensPermitida:
+    - "http://localhost:4200"

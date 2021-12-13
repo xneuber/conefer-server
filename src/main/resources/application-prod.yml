@@ -1,0 +1,4 @@
+### Properties do sistema
+conefer:
+  origensPermitida:
+    - "https://localhost:4200"
