@@ -2,25 +2,30 @@
   "groups": [
     {
       "name": "conefer",
-      "type": "com.ifg1.manutencao.coneferserver.config.Propriedades",
-      "sourceType": "com.ifg1.manutencao.coneferserver.config.Propriedades"
+      "type": "br.edu.ifg.manutencao.coneferserver.config.Propriedades",
+      "sourceType": "br.edu.ifg.manutencao.coneferserver.config.Propriedades"
+    },
+    {
+      "name": "coneferserver",
+      "type": "br.edu.ifg.manutencao.coneferserver.config.Propriedades",
+      "sourceType": "br.edu.ifg.manutencao.coneferserver.config.Propriedades"
     }
   ],
   "properties": [
     {
       "name": "conefer.base-package-enum",
       "type": "java.lang.String",
-      "sourceType": "com.ifg1.manutencao.coneferserver.config.Propriedades"
+      "sourceType": "br.edu.ifg.manutencao.coneferserver.config.Propriedades"
     },
     {
       "name": "conefer.origens-permitida",
       "type": "java.util.List<java.lang.String>",
-      "sourceType": "com.ifg1.manutencao.coneferserver.config.Propriedades"
+      "sourceType": "br.edu.ifg.manutencao.coneferserver.config.Propriedades"
     },
     {
-      "name": "conefer.url-portal",
+      "name": "conefer.origensPermitida",
       "type": "java.lang.String",
-      "sourceType": "com.ifg1.manutencao.coneferserver.config.Propriedades"
+      "description": "Description for conefer.origensPermitida."
     }
   ],
   "hints": []

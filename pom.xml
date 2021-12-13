@@ -8,7 +8,7 @@
 		<version>2.6.1</version>
 
 	</parent>
-	<groupId>com.ifg.2021.manutencao</groupId>
+	<groupId>br.edu.ifg.2021.manutencao</groupId>
 	<artifactId>conefer-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>

@@ -1,0 +1,15 @@
+{
+  "groups": [
+    {
+      "name": "coneferserver",
+      "type": "br.edu.ifg.manutencao.coneferserver.config.Propriedades",
+      "sourceType": "br.edu.ifg.manutencao.coneferserver.config.Propriedades"
+    }
+  ],
+  "properties": [
+    {
+      "name": "conefer.origensPermitida",
+      "type": "java.lang.String",
+      "description": "Description for conefer.origensPermitida."
+    }
+  ] }

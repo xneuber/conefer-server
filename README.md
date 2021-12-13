@@ -290,3 +290,16 @@ for o caso, abaixo está como default.
 -Dconefer.datasource.username=postgres
 -Dconefer.datasource.password=123456
 ```
+
+###### Versões e Tecnologias
+
+1. Java : 17
+2. Springboot: 2.6.1
+3. Servidor de Aplicação: Provided (Servidor próprio do spring boot)
+4. Banco de dados: Postgres 13
+5. Documentação Swagger (http://localhost:8080/conefer-server/swagger-ui.html#/)
+
+### Fontes
+
+1. https://medium.com/@wssilva.willian/design-de-api-rest-9807a5b16c9f
+2. https://www.devmedia.com.br/convencoes-de-codigo-java/23871
