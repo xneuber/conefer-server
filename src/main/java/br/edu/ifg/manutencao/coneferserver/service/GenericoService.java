@@ -1,9 +1,11 @@
 package br.edu.ifg.manutencao.coneferserver.service;
 
 import br.edu.ifg.manutencao.coneferserver.entity.Entidade;
+import br.edu.ifg.manutencao.coneferserver.entity.Pessoa;
 import br.edu.ifg.manutencao.coneferserver.exception.ExceptionManipulator;
 import br.edu.ifg.manutencao.coneferserver.exception.InfoMessage;
 import br.edu.ifg.manutencao.coneferserver.model.EntidadeModel;
+import br.edu.ifg.manutencao.coneferserver.model.response.PessoaResponse;
 import br.edu.ifg.manutencao.coneferserver.repository.GenericoRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.reflect.TypeToken;
@@ -126,11 +128,11 @@ public abstract class GenericoService<E extends Entidade> extends ExceptionManip
         }
     }
 
-    public static <S extends Entidade, T extends EntidadeModel> T parserToModel(S source, Class<T> targetClass){
+    public static <S extends Entidade, T extends EntidadeModel> T parserToModel(Pessoa source, Class<PessoaResponse> targetClass){
         try {
             Optional.ofNullable(source).orElseThrow(() -> new ConeferException("O objeto informado está nullo"));
 
-            return new ModelMapper().map(source, targetClass);
+            return (T) new ModelMapper().map(source, targetClass);
 
         } catch (Exception e) {
             throw new RuntimeException(e);

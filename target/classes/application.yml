@@ -57,14 +57,14 @@ logging:
     springframework:
       web: error
     br:
-      gov:
-        go:
-          mago:
-            conefer: error
+      edu:
+        ifg:
+          manutencao:
+            coneferserver: error
   pattern:
     console: "%clr(%d{dd-MM-yyyy E HH:mm:ss.SSS}){blue} %clr(%-5p) %clr(${PID}){faint} %clr(---){faint} %clr([%8.15t]){cyan} %clr(%-40.40logger{0}){blue} %clr(:){red} %clr(%m){faint}%n"
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%"
 
 ### Properties do sistema
 conefer:
-  basePackageEnum: "com.ifg1.manutencao.coneferserver.entity.enuns"
+  basePackageEnum: "br.edu.ifg.manutencao.coneferserver.entity.enum"
