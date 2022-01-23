@@ -8,6 +8,7 @@ import net.bytebuddy.implementation.bytecode.constant.IntegerConstant;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Getter
 @Setter
