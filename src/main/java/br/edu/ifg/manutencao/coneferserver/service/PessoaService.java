@@ -62,10 +62,4 @@ public class PessoaService extends GenericoService<Pessoa> {
         super.atualizar(entidadeAtualizar);
         return parserToModel(entidadeAtualizar, PessoaResponse.class);
     }
-
-    public PessoaResponse criar(PessoaPutRequest entidade) throws ConeferException {
-        Pessoa entidadeCriar = new Pessoa(entidade.getNome(), entidade.getDescricao());
-        super.atualizar(entidadeCriar);
-        return parserToModel(entidadeCriar, PessoaResponse.class);
-    }
 }

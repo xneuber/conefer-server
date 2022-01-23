@@ -12,7 +12,7 @@ spring:
     banner-mode: console
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
   datasource:
     password: ${conefer.datasource.password}
