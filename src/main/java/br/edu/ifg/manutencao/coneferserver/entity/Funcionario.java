@@ -37,10 +37,4 @@ public class Funcionario extends Entidade {
     @ManyToOne
     private Cargo cargo;
 
-    @ManyToOne
-    private Grupo grupo;
-
-
-
-
 }
