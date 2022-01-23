@@ -19,7 +19,7 @@ import javax.persistence.*;
 public class Usuario extends Entidade {
 
     @OneToOne
-    @JoinColumn(name = "funcionario_id", unique = true)
+    @JoinColumn(name = "grupo_id", unique = true)
     private Funcionario funcionario;
 
     private String usuario;

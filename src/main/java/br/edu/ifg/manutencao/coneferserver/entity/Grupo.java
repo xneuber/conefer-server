@@ -15,7 +15,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-@SequenceGenerator(name = "default_gen", sequenceName = "cargo_id_seq", allocationSize = 1)
+@SequenceGenerator(name = "default_gen", sequenceName = "grupo_id_seq", allocationSize = 1)
 public class Grupo extends Entidade {
 
     @Column(nullable = false)
